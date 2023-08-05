@@ -1,7 +1,7 @@
 /**
  * Reset
  */
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@
 body {
     --color-primary: #f76c5e;
     --color-secondary: #f68e5f;
-    --color-tertiary: #ffeee6;    
+    --color-tertiary: #ffeee6;
 }
 
 /* Mise en forme des titres */
@@ -41,7 +41,8 @@ h3 {
 
 /* Mise en forme des formulaires */
 input[type='radio'] {
-    filter: grayscale(1); /* Grayscale passe le bouton en niveau de gris */
+    filter: grayscale(1);
+    /* Grayscale passe le bouton en niveau de gris */
 }
 
 
@@ -85,7 +86,7 @@ button:focus {
     background-color: var(--color-tertiary);
     border: 3px solid var(--color-primary);
     padding: 2px;
-    
+
 }
 
 /**
@@ -97,7 +98,7 @@ body {
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -233,7 +234,7 @@ footer {
 
 .popup div {
     font-size: 25px;
-    padding : 5px;
+    padding: 5px;
     padding-bottom: 15px;
 }
 
@@ -251,7 +252,7 @@ footer {
  */
 
 
- /* En dessous de 1200 px */
+/* En dessous de 1200 px */
 @media screen and (max-width: 1200px) {
     main {
         width: 60%;

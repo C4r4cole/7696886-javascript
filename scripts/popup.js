@@ -26,6 +26,13 @@ function cacherPopup() {
     popupBackground.classList.remove("active")
 }
 
+function preventDefault() {
+    let btnEnvoyerMail = document.getElementById("btnEnvoyerMail")
+    btnEnvoyerMail.addEventListener("submit", (event) => {
+        event.preventDefault()
+    })
+}
+
 
 /**
  * Cette fonction initialise les écouteurs d'événements qui concernent 
@@ -38,6 +45,10 @@ function initAddEventListenerPopup() {
     btnPartage.addEventListener("click", () => {
         // Quand on a cliqué sur le bouton partagé, on affiche la popup
         afficherPopup()
+        preventDefault()
+        let nom = document.getElementById("nom").value
+        let mailto = document.getElementById("email").value
+        
     })
 
     // On écoute le click sur la div "popupBackground"
